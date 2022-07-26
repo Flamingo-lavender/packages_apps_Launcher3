@@ -46,7 +46,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.internal.util.krypton.KryptonUtils;
+import com.android.internal.util.flamingo.FlamingoUtils;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.InvariantDeviceProfile;
 import com.android.launcher3.LauncherFiles;
@@ -310,7 +310,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
         }
 
         public static boolean isGSAEnabled(Context context) {
-            return KryptonUtils.isPackageInstalled(context, GSA_PACKAGE, false /** ignoreState*/);
+            return FlamingoUtils.isPackageInstalled(context, GSA_PACKAGE, false /** ignoreState*/);
         }
 
         private void updateIsGoogleAppEnabled() {
